@@ -33,7 +33,7 @@ Go to [GitHub.com](http://www.github.com)
   * sign up!
   
  Github account ...
- *  click on top right corner (pink)
+ *  click on top right corner (profile )
  *  click on settings
  *  Under "Personal Settings" click on "SSH Keys"
  *  click on "Add SSH Key" 
@@ -56,23 +56,32 @@ Go to [GitHub.com](http://www.github.com)
 3. adding a description is optional
 4. choose **public** repository
 5. Select "**Initialize this repository with a README.md** 
-6. Click **Create Repository**    
- 
-* In cloud 9 .....
- 
- 1. type git init
- 2. PRESS ENTER 
- 3. type " git config --global user.name "First Name, Last Name" "
- 4. PRESS ENTER
- 5. type " git config --global user.email "username@hstat.org"
- 6. PRESS ENTER
- 7. type " touch README.md " (capital letters, case sensitive)
- 8. you may add code to the README.md
- 9. type "git commit -m "(type a message here)" 
- 10. 
+6. Click **Create Repository**  
+7. copy where it says "git remote add origin git @github.com:(...)"
+8. paste this code in your cloud 9
+9. type " yes "
+10. copy where it says "git push -u origin master" 
+11. paste this code in your cloud 9 
 
  
- 
+* In cloud 9 .....
+
+
+ 1. mkdir github-learning
+ 2. cd gitub-learning 
+ 3. mkdir "file name"
+ 4. cd "file name"
+ 5. pwd
+ 6. type git init
+ 7. PRESS ENTER 
+ 8. type " git config --global user.name "First Name, Last Name" "
+ 9. PRESS ENTER
+ 10. type " git config --global user.email "username@hstat.org"
+ 11. PRESS ENTER
+ 12. type " touch README.md " (capital letters, case sensitive)
+ 13. you may add code to the README.md
+ 14. type "git commit -m "(type a message here)" 
+ 15. type "git push "
 
  
 
@@ -90,12 +99,29 @@ Go to [GitHub.com](http://www.github.com)
   5. make a "README.md" file --- touch "README.md" 
   6. open the README.md file
   7. you can write a messages here 
-  8. type "git commit -m "message" " (it records your snapshots into your history)   
+  8. git status 
+  9. type "git commit -m "message" " (it records your snapshots into your history) 
+  10. "git push "
+   
+ **Always remember to SAVE, ADD , COMMIT and PUSH**
   
- * Now if you want to delete the README.md file...
+  
+ * Now _if you want_ to delete the README.md file...
    9. "pwd" (make sure you're at workspace)
    10. "ls" (this command lets you see the list of files that are in the repository)
    11. "rm -rf README" (this command deletes the README.md file) 
   
- 
- 
+
+
+
+----
+
+# Fork & Clonning 
+1. search up on "GitHub Search" (example: games)
+2. click on the game you are interested 
+3. right side of the page, click on "Fork"
+4. copy SSH clone URL
+5. go to your cloud 9 account
+6. make sure you are on workspace
+7. type "git **clone** (url goes here)"
+8. 
