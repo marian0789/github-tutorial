@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
+    <title>GitHub-Tutorial by marian0789</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="container">
+        <h1>GitHub-Tutorial</h1>
+        <h2>Getting Started With GitHub</h2>
+
+        <section id="downloads">
+          <a href="https://github.com/marian0789/github-tutorial/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/marian0789/github-tutorial/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/marian0789/github-tutorial" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
+
+    <div class="container">
+      <section id="main_content">
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by Maria Nieves</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>What is Git ?
+
+<ul>
+<li>Git does not require GitHub </li>
+<li>Git "snapshots" your code (keeps track of changes made to your code)</li>
+</ul>
+</li>
+<li>What is GitHub ?
+
+<ul>
+<li>GitHub requires Git. No Git, no GitHub!!</li>
+<li>GitHub stores your code in a cloud </li>
+<li>GitHub is a visually tracks your changes</li>
+</ul>
+</li>
+<li>What is the difference between Git and GitHub?
+
+<ul>
+<li>the difference betweeh git and github is Github needs Git in order to function</li>
+<li>Git is responsible for keeping track of changes to content and can be shared with others and GitHub is a company that provides Git repository hosting.</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="one-time-setup" class="anchor" href="#one-time-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>One Time Setup</h2>
+
+<p>Sign into <a href="http://www.c9.io">Cloud 9</a> ...</p>
+
+<ul>
+<li> click on left right corner "Cloud 9"</li>
+<li> click on "Go To Your Dashboard"</li>
+<li> click on the gear icon </li>
+<li> (on the left side bar) click on "SSH KEYS"</li>
+<li> copy the Default SSH key (command c) </li>
+</ul>
+
+<p>Go to <a href="http://www.github.com">GitHub.com</a> </p>
+
+<ul>
+<li>
+<p>sign up!</p>
+
+<p>Github account ...</p>
+
+<ul>
+<li> click on top right corner (profile )</li>
+<li> click on settings</li>
+<li> Under "Personal Settings" click on "SSH Keys"</li>
+<li> click on "Add SSH Key" </li>
+<li> type your title of your project</li>
+<li> The "Key" box , paste your "SSH key" </li>
+<li> press "Add key"</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ul>
+<li>Setup in GitHub
+
+<ol>
+<li>In the top-right corner click the plus sign and click on <strong>New Repository</strong><br>
+</li>
+<li>Create a short repository name<br>
+</li>
+<li>adding a description is optional</li>
+<li>choose <strong>public</strong> repository</li>
+<li>Select "<strong>Initialize this repository with a README.md</strong> </li>
+<li>Click <strong>Create Repository</strong><br>
+</li>
+<li>click on " SSH "</li>
+<li>copy where it says "git remote add origin git @github.com:(...)"</li>
+<li>paste this code in your cloud 9</li>
+<li>type " yes " </li>
+<li>copy where it says "git push -u origin master" </li>
+<li>paste this code in your cloud 9 </li>
+</ol>
+</li>
+</ul>
+
+<ul>
+<li>
+<p>In cloud 9 .....</p>
+
+<ol>
+<li>mkdir github-learning</li>
+<li>cd gitub-learning </li>
+<li>mkdir "file name"</li>
+<li>cd "file name"</li>
+<li>pwd</li>
+<li>type git init (this is your first init)</li>
+<li>PRESS ENTER </li>
+<li>type " git config --global user.name "First Name, Last Name" "</li>
+<li>PRESS ENTER</li>
+<li>type " git config --global user.email "<a href="mailto:username@hstat.org">username@hstat.org</a>"</li>
+<li>PRESS ENTER</li>
+<li>type " touch README.md " (capital letters, case sensitive)</li>
+<li>you may add code to the README.md</li>
+<li>type "git commit -m "(type a message here)" </li>
+<li>type "git push "</li>
+</ol>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<ul>
+<li>
+<p>Workflow ~</p>
+
+<ul>
+<li>In order to be able to add files in your directory.. type:<br>
+</li>
+<li>"cd (directory's name)" (this command gets you inside of the repository)</li>
+<li>"pwd" (this command shows you where you're at)</li>
+<li>"mkdir (files name)" (makes a new file)</li>
+<li>"cd (file's name) " (this command gets you into the new file/ file)</li>
+<li>make a "README.md" file --- touch "README.md" </li>
+<li>open the README.md file</li>
+<li>you can write a messages here </li>
+<li>git status </li>
+<li>type "git commit -m "message" " (it records your snapshots into your history) </li>
+<li>"git push origin master "</li>
+</ul>
+
+<p><strong>Always remember to SAVE, ADD, COMMIT and PUSH !!</strong></p>
+
+<ul>
+<li>Now <em>if you want</em> to delete the README.md file...
+
+<ol>
+<li>"pwd" (make sure you're at workspace)</li>
+</ol>
+</li>
+<li>"ls" (this command lets you see the list of files that are in the repository)</li>
+<li>"rm -rf README" (this command deletes the README.md file) </li>
+</ul>
+</li>
+<li>
+<p>Commands ~</p>
+
+<ul>
+<li>git add = adds a file to the index</li>
+<li>commit = records the changes on the repository (file)</li>
+<li>git init = creates an empty git repository </li>
+<li>mv = move to a different directory or renames a file</li>
+<li>git status = shows what you have in the directory</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h1>
+<a id="fork--clonning" class="anchor" href="#fork--clonning" aria-hidden="true"><span class="octicon octicon-link"></span></a>Fork &amp; Clonning</h1>
+
+<ol>
+<li>search up on "GitHub Search" (example: games)</li>
+<li>click on the game you are interested </li>
+<li>right side of the page, click on "Fork"</li>
+<li>copy SSH clone URL</li>
+<li>go to your cloud 9 account</li>
+<li>make sure you are on workspace</li>
+<li>type "git clone <a href="https://github.com/YOUR-USERNAME/(..)">https://github.com/YOUR-USERNAME/(..)</a>"</li>
+<li>Press enter and the local clone will be created</li>
+<li>on github, navigate to the (Name) repository</li>
+<li>git remote -v</li>
+</ol>
+      </section>
+    </div>
+
+    
+  </body>
+</html>
